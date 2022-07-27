@@ -4,8 +4,15 @@ project(CppGithubAction
 		CXX
 )
 
+find_package(fmt CONFIG REQUIRED)
+
 add_executable(CppGithubAction
 	src/main.cpp
+)
+
+target_link_libraries(CppGithubAction
+	PRIVATE
+		fmt::fmt
 )
 
 set_target_properties(CppGithubAction

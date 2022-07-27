@@ -47,7 +47,7 @@ jobs:
         shell: bash
         run: cmake --build build
 
-      - name: Run example on Linux
+      - name: Run example on Linux and MacOs
         shell: bash
         run: ./build/CppGithubAction
         if: runner.os == 'Linux' || runner.os == 'macOs'
