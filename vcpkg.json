@@ -1,0 +1,9 @@
+{
+	"name": "cpp-github-action",
+	"version-string": "0.1.0",
+	"port-version": 1,
+	"homepage": "https://github.com/mwthinker/CppGithubAction",
+	"description": "Testing github action for C++20, CMake and vcpkg on Linux, MacOs and Windows.",
+	"license": "MIT",
+	"dependencies": []
+}
