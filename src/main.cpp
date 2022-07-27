@@ -1,7 +1,7 @@
-#include <iostream>
+#include <fmt/format.h>
 
 int main(int argc, char** argv) {
-	std::cout << "GithubAction\n";
+	fmt::print("GithubAction {}", "\n");
 
 	return 0;
 }
