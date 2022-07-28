@@ -12,7 +12,7 @@ add_executable(CppGithubAction
 
 target_link_libraries(CppGithubAction
 	PRIVATE
-		fmt::fmt-header-only
+		fmt::fmt
 )
 
 set_target_properties(CppGithubAction
