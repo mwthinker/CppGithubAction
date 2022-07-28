@@ -25,7 +25,7 @@ jobs:
 
       - name: Set C++/C compiler on macOs
         shell: bash
-        run: echo "CC=$gcc-11" >> $GITHUB_ENV; echo "CXX=$g++-11" >> $GITHUB_ENV; echo "$GITHUB_ENV"
+        run: echo "CC=$gcc-11" >> $GITHUB_ENV; echo "CXX=$g++-11" >> $GITHUB_ENV; cat "$GITHUB_ENV"
         if: runner.os == 'macOs'
 
       - uses: friendlyanon/setup-vcpkg@v1
@@ -44,7 +44,7 @@ jobs:
 
       - name: Compile binaries
         shell: bash
-        run: cmake --build build -DCMAKE_VERBOSE_MAKEFILE=1
+        run: cmake --build build
 
       - name: Run example on Linux and macOs
         shell: bash
